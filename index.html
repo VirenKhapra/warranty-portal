@@ -8,7 +8,8 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #f2f2f2;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Grest_logo.png') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,7 +18,7 @@
     .card {
       width: 90%;
       max-width: 450px;
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       padding: 30px;
       border-radius: 20px;
       text-align: center;
@@ -93,7 +94,7 @@
       let found = false;
       for (let i = 1; i < rows.length; i++) {
         const row = rows[i];
-        if (row[0].trim() === imei) {  // IMEI is in Column A
+        if (row[0].trim() === imei) {
           found = true;
           const model = row[1];
           const customer = row[2];
