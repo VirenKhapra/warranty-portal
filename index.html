@@ -26,10 +26,13 @@
     }
     .logo-img {
       width: 80px;
+      height: 80px;
+      object-fit: contain;
       display: block;
       margin: 0 auto 16px auto;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: #fff;
     }
     h1 {
       font-size: 24px;
@@ -121,7 +124,7 @@
             <b>Days Left:</b> ${daysLeft}<br>
             <b>Status:</b> ${status}<br><br>
             ${cleanStatus === 'active' 
-              ? '<button onclick="window.open(\\'https://docs.google.com/forms/d/e/1FAIpQLScxBa1I1tvc9cW5bGthUGqdvWEQEUtOvU4cyNZevB5SHurDug/viewform\\')">Claim Warranty</button>' 
+              ? '<button onclick=\"window.open(\\'https://docs.google.com/forms/d/e/1FAIpQLScxBa1I1tvc9cW5bGthUGqdvWEQEUtOvU4cyNZevB5SHurDug/viewform\\')\">Claim Warranty</button>' 
               : ''}`;
           break;
         }
